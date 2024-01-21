@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/AQS_BACKEND.iml" filepath="$PROJECT_DIR$/.idea/AQS_BACKEND.iml" />
+      <module fileurl="file://$PROJECT_DIR$/aqs-DWCC0130_backend/develop/aqs-dwcc0130_backend.iml" filepath="$PROJECT_DIR$/aqs-DWCC0130_backend/develop/aqs-dwcc0130_backend.iml" />
+    </modules>
+  </component>
+</project>
