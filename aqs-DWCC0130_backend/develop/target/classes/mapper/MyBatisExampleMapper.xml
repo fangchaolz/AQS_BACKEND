@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.digiwin.aqs_dwcc0130.mapper.MyBatisExampleMapper">
+
+    <resultMap id="exampleResultMap" type="java.util.HashMap">
+        <result column="id" property="id"></result>
+        <result column="name" property="name"></result>
+        <result column="message" property="message"></result>
+        <result column="tenantsid" property="tenantsid"></result>
+    </resultMap>
+
+    <select id="getInfo" resultMap="exampleResultMap">
+        select * from example
+    </select>
+
+    <update id="updateInfo"  parameterType="java.util.Map">
+        update example set message = #{parameter.message} where id = #{parameter.id}
+    </update>
+
+    <delete id="deleteInfo"  parameterType="java.util.Map">
+        delete from example where id = #{parameter.id}
+    </delete>
+
+    <insert id="insertInfo"  parameterType="java.util.Map">
+        insert into example (name,message,tenantsid)
+        values (#{parameter.name},#{parameter.message}, #{parameter.tenantsid})
+    </insert>
+
+</mapper>
